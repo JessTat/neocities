@@ -1,0 +1,121 @@
+/* note to self: grid.layoutit.com */ 
+.train {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.4fr 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: column dense;
+    width: 2870px;
+    height: 800px;
+    padding-top:20px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.top { grid-area: 1 / 1 / 2 / 19;
+margin-left:-150px;
+margin-right:-150px;
+}
+
+.nav1 { grid-area: 1 / 1 / 2 / 4;}
+
+.nav2 { grid-area: 1 / 4 / 2 / 7;}
+
+.nav3 { grid-area: 1 / 7 / 2 / 10;}
+
+.nav4 { grid-area: 1 / 10 / 2 / 13;}
+
+.nav5 { grid-area: 1 / 13 / 2 / 16;}
+
+.nav6 { grid-area: 1 / 16 / 2 / 19;}
+
+.map { grid-area: 2 / 1 / 6 / 3;}
+
+.window1 { grid-area: 2 / 3 / 6 / 7;}
+
+.doors { grid-area: 2 / 7 / 9 / 11;
+margin-top:5%;}
+
+.window2 { grid-area: 2 / 11 / 6 / 15;}
+
+.window3 { grid-area: 2 / 15 / 6 / 19;}
+
+.seats1 { grid-area: 5 / 1 / 9 / 7;}
+
+.seats2 { grid-area: 5 / 11 / 9 / 19;}
+
+.blog { grid-area: 3 / 11 / 9 / 14;
+  border-radius:50px;
+  border:5px;
+  background-color:slategrey;
+  margin:20px;}
+
+.abovedoor { grid-area: 2 / 7 / 3 / 11;}
+  
+/* ---------------- Container Stuff ---------------- */
+.debug{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.window{
+    border-radius:50px;
+    border:5px;
+    border-style:solid;
+    border-color:aliceblue;
+    margin:5px;
+    background:
+    repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
+    repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px;
+    background-blend-mode: difference;
+    animation: b .2s infinite alternate;
+        }
+        @keyframes b{
+          100% {background-position: 50% 0, 60% 50%}
+}
+
+.banner{
+    border-radius:5px;
+    background: black;
+    margin-bottom:20px;
+    margin-top:5px;
+}
+
+/* ---------------- Animation ---------------- */
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ---------------- Main ---------------- */
+body {
+    background-color: #1b1b1b;
+    color:aliceblue;
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  }
+  
+#b1 {
+  text-align:left;
+  }
+
+#b2 {
+      text-align:center;
+}
+
+table {
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+}
+th {
+    border: 1px solid;
+    width: 50%;
+}
