@@ -1,4 +1,4 @@
-/* note to self: grid.layoutit.com */ 
+/* note to self: grid.layoutit.com */
 .train {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -51,7 +51,7 @@ margin-top:5%;}
   margin:20px;}
 
 .abovedoor { grid-area: 2 / 7 / 3 / 11;}
-  
+
 /* ---------------- Container Stuff ---------------- */
 .debug{
     background-color: rgba(255, 255, 255, 0.1);
@@ -101,7 +101,7 @@ body {
 body::-webkit-scrollbar {
   display: none;
   }
-  
+
 #b1 {
   text-align:left;
   }
